@@ -23,7 +23,7 @@ BuildRequires: pkgconfig(hyprutils)
 
 Requires: /usr/bin/lscpu
 Requires: /usr/bin/lspci
-Requires: /usb/bin/free
+Requires: /usr/bin/free
 Requires: hyprland-qt-support
 
 %description
