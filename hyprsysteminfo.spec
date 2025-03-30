@@ -1,3 +1,4 @@
+Name:     hyprsysteminfo
 Version:	0.1.3
 Release:	1
 Summary:	A tiny qt6/wml application to display information about the running system
