@@ -37,23 +37,3 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 %doc README.md
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
-
-BuildRequires: wayland-devel
-BuildRequires: pkgconfig(hyprutils)
-
-Requires: /usr/bin/lscpu
-Requires: /usr/bin/lspci
-Requires: /usr/bin/free
-Requires: hyprland-qt-support
-
-%description
-%{summary}
-
-%check
-desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
-
-%files
-%license LICENSE
-%doc README.md
-%{_bindir}/%{name}
-%{_datadir}/applications/%{name}.desktop
