@@ -7,7 +7,7 @@ Group:		Hyprland
 
 URL:		https://github.com/hyprwm/%{name}
 Source0:	%{url}/archive/v%{version}/%{name}-%{version}.tar.gz
-
+Patch0:		https://github.com/hyprwm/hyprsysteminfo/pull/21.patch
 BuildSystem:	cmake
 
 BuildRequires: desktop-file-utils
