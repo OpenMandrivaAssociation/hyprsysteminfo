@@ -19,6 +19,7 @@ BuildRequires: qt6-qtbase-tools
 BuildRequires: pkgconfig(xkbcommon)
 BuildRequires: pkgconfig(wayland-client)
 BuildRequires: pkgconfig(hyprutils)
+BuildRequires: vulkan-headers
 
 Requires: /usr/bin/lscpu
 Requires: /usr/bin/lspci
