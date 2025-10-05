@@ -20,6 +20,11 @@ BuildRequires: pkgconfig(xkbcommon)
 BuildRequires: pkgconfig(wayland-client)
 BuildRequires: pkgconfig(hyprutils)
 BuildRequires: vulkan-headers
+BuildRequires: cmake(Qt6QmlNetwork)
+BuildRequires: cmake(Qt6QmlAssetDownloader)
+BuildRequires: cmake(Qt6LabsSynchronizer)
+BuildRequires: cmake(Qt6QmlCore)
+BuildRequires: qt6-qtbase-theme-gtk3
 
 Requires: /usr/bin/lscpu
 Requires: /usr/bin/lspci
