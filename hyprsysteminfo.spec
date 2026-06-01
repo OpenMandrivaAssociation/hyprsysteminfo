@@ -1,34 +1,33 @@
 Name:     hyprsysteminfo
-Version:	0.1.3
-Release:	9
-Summary:	A tiny qt6/wml application to display information about the running system
+Version:	0.2.0
+Release:	1
+Summary:	System info utility for Hyprland
 License:	BSD-3-Clause
 Group:		Hyprland
 
 URL:		https://github.com/hyprwm/%{name}
 Source0:	%{url}/archive/v%{version}/%{name}-%{version}.tar.gz
-Patch0:		https://github.com/hyprwm/hyprsysteminfo/pull/21.patch
 BuildSystem:	cmake
+BuildOption:	-DCMAKE_BUILD_TYPE=Release
 
 BuildRequires: desktop-file-utils
-BuildRequires: cmake(Qt6Quick)
-BuildRequires: cmake(Qt6QuickControls2)
-BuildRequires: cmake(Qt6Widgets)
-BuildRequires: cmake(Qt6WaylandClient)
-BuildRequires: qt6-qtbase-tools
+BuildRequires: pkgconfig(cairo)
+BuildRequires: pkgconfig(libdrm)
+BuildRequires: pkgconfig(libpci)
+BuildRequires: pkgconfig(pixman-1)
 BuildRequires: pkgconfig(xkbcommon)
 BuildRequires: pkgconfig(wayland-client)
-BuildRequires: pkgconfig(hyprutils)
+BuildRequires: pkgconfig(aquamarine)
+BuildRequires: pkgconfig(hyprutils) >= 0.10.2
+BuildRequires: pkgconfig(hyprtoolkit)
+BuildRequires: pkgconfig(hyprgraphics)
 BuildRequires: vulkan-headers
-BuildRequires: cmake(Qt6QmlNetwork)
-BuildRequires: cmake(Qt6LabsSynchronizer)
-BuildRequires: cmake(Qt6QmlCore)
-BuildRequires: qt6-qtbase-theme-gtk3
+BuildRequires: glaze-devel
+
 
 Requires: /usr/bin/lscpu
 Requires: /usr/bin/lspci
 Requires: /usr/bin/free
-Requires: hyprland-qt-support
 
 %description
 %{summary}
